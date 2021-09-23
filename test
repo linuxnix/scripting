@@ -1,324 +1,324 @@
 # 18.9.52.2 L1 Ensure Prevent the usage of OneDrive for file storage on Windows 8.1 is set to Enabled
-default['wbg']['a00964']['windows']['wess']['2012']['registry_keys']['HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows\OneDrive']['DisableFileSync'] = {
+default['wbg']['a00964']['windows']['wess']['2012']['registry_keys']['HKEY_LOCAL_MACHINE\SOFTWARE\POLICIES\MICROSOFT\WINDOWS\ONEDRIVE']['DisableFileSync'] = {
   reg_key: 'HKEY_LOCAL_MACHINE\\SOFTWARE\\Policies\\Microsoft\\Windows\\OneDrive',
   name: 'DisableFileSync',
   enabled: true,
   type: :dword,
   data: '0',
-  action: :create,  
+  action: :create,
 }
 
 # 18.9.81.2.1 L1 Ensure Configure Default consent is set to Enabled Always ask before sending data
-default['wbg']['a00964']['windows']['wess']['2012']['registry_keys']['HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows\Windows Error Reporting\Consent']['DisableFileSync'] = {
+default['wbg']['a00964']['windows']['wess']['2012']['registry_keys']['HKEY_LOCAL_MACHINE\SOFTWARE\POLICIES\MICROSOFT\WINDOWS\WINDOWS ERROR REPORTING\CONSENT']['DisableFileSync'] = {
   reg_key: 'HKEY_LOCAL_MACHINE\\SOFTWARE\\Policies\\Microsoft\\Windows\\Windows Error Reporting\\Consent',
   name: 'DefaultConsent',
   enabled: true,
   type: :dword,
   data: '0',
-  action: :create,  
+  action: :create,
 }
 # 18.9.81.3 L1 Ensure Automatically send memory dumps for OS-generated error reports is set to Disabled
-default['wbg']['a00964']['windows']['wess']['2012']['registry_keys']['HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows\Windows Error Reporting']['AutoApproveOSDumps'] = {
+default['wbg']['a00964']['windows']['wess']['2012']['registry_keys']['HKEY_LOCAL_MACHINE\SOFTWARE\POLICIES\MICROSOFT\WINDOWS\WINDOWS ERROR REPORTING']['AutoApproveOSDumps'] = {
   reg_key: 'HKEY_LOCAL_MACHINE\\SOFTWARE\\Policies\\Microsoft\\Windows\\Windows Error Reporting',
   name: 'AutoApproveOSDumps',
   enabled: true,
   type: :dword,
   data: '0',
-  action: :create,  
+  action: :create,
 }
 
 # 2016 features
 
 # 18.1.2.2 L1 Ensure Allow input personalization is set to Disabled:
-default['wbg']['a00964']['windows']['wess']['2016']['registry_keys']['HKEY_LOCAL_MACHINE\Software\Policies\Microsoft\InputPersonalization']['AllowInputPersonalization'] = {
+default['wbg']['a00964']['windows']['wess']['2016']['registry_keys']['HKEY_LOCAL_MACHINE\SOFTWARE\POLICIES\MICROSOFT\INPUTPERSONALIZATION']['AllowInputPersonalization'] = {
   reg_key: 'HKEY_LOCAL_MACHINE\\Software\\Policies\\Microsoft\\InputPersonalization',
   name: 'AllowInputPersonalization',
   enabled: true,
   type: :dword,
   data: '0',
-  action: :create,  
+  action: :create,
 }
 
 # 18.9.13.1 L1 Ensure Turn off Microsoft consumer experiences is set to Enabled:
-default['wbg']['a00964']['windows']['wess']['2016']['registry_keys']['HKEY_LOCAL_MACHINE\Software\Policies\Microsoft\Windows\CloudContent']['DisableWindowsConsumerFeatures'] = {
+default['wbg']['a00964']['windows']['wess']['2016']['registry_keys']['HKEY_LOCAL_MACHINE\SOFTWARE\POLICIES\MICROSOFT\WINDOWS\CLOUDCONTENT']['DisableWindowsConsumerFeatures'] = {
   reg_key: 'HKEY_LOCAL_MACHINE\\Software\\Policies\\Microsoft\\Windows\\CloudContent',
   name: 'DisableWindowsConsumerFeatures',
   enabled: true,
   type: :dword,
   data: '0',
-  action: :create,  
+  action: :create,
 }
 
 # 18.9.14.1 L1 Ensure Require pin for pairing is set to Enabled:
-default['wbg']['a00964']['windows']['wess']['2016']['registry_keys']['HKEY_LOCAL_MACHINE\Software\Policies\Microsoft\Windows\Connect']['RequirePinForPairing'] = {
+default['wbg']['a00964']['windows']['wess']['2016']['registry_keys']['HKEY_LOCAL_MACHINE\SOFTWARE\POLICIES\MICROSOFT\WINDOWS\CONNECT']['RequirePinForPairing'] = {
   reg_key: 'HKEY_LOCAL_MACHINE\\Software\\Policies\\Microsoft\\Windows\\Connect',
   name: 'RequirePinForPairing',
   enabled: true,
   type: :dword,
   data: '0',
-  action: :create,  
+  action: :create,
 }
 
 # 19.7.7.2 L1 Ensure Do not suggest third-party content in Windows spotlight is set to Enabled:
-default['wbg']['a00964']['windows']['wess']['2016']['registry_keys']['HKEY_CURRENT_USER\Software\Policies\Microsoft\Windows\CloudContent']['DisableThirdPartySuggestions'] = {
+default['wbg']['a00964']['windows']['wess']['2016']['registry_keys']['HKEY_CURRENT_USER\SOFTWARE\POLICIES\MICROSOFT\WINDOWS\CLOUDCONTENT']['DisableThirdPartySuggestions'] = {
   reg_key: 'HKEY_CURRENT_USER\\Software\\Policies\\Microsoft\\Windows\\CloudContent',
   name: 'DisableThirdPartySuggestions',
   enabled: true,
   type: :dword,
   data: '0',
-  action: :create,  
+  action: :create,
 }
 
 # 18.5.4.1 L1 Set NetBIOS node type to P-node Ensure NetBT Parameter NodeType is set to 0x2 2 MS Only:
-default['wbg']['a00964']['windows']['wess']['2016']['registry_keys']['HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\NetBT\Parameters']['NodeType'] = {
+default['wbg']['a00964']['windows']['wess']['2016']['registry_keys']['HKEY_LOCAL_MACHINE\SYSTEM\CURRENTCONTROLSET\SERVICES\NETBT\PARAMETERS']['NodeType'] = {
   reg_key: 'HKEY_LOCAL_MACHINE\\SofSYSTEM\\CurrentControlSet\\Services\\NetBT\\Parameters',
   name: 'NodeType',
   enabled: true,
   type: :dword,
   data: '2',
-  action: :create,  
+  action: :create,
 }
 
 # 18.5.8.1 L1 Ensure Enable insecure guest logons is set to Disabled:
-default['wbg']['a00964']['windows']['wess']['2016']['registry_keys']['HKEY_LOCAL_MACHINE\Software\Policies\Microsoft\Windows\LanmanWorkstation']['AllowInsecureGuestAuth'] = {
+default['wbg']['a00964']['windows']['wess']['2016']['registry_keys']['HKEY_LOCAL_MACHINE\SOFTWARE\POLICIES\MICROSOFT\WINDOWS\LANMANWORKSTATION']['AllowInsecureGuestAuth'] = {
   reg_key: 'HKEY_LOCAL_MACHINE\\Software\\Policies\\Microsoft\\Windows\\LanmanWorkstation',
   name: 'AllowInsecureGuestAuth',
   enabled: true,
   type: :dword,
   data: '0',
-  action: :create,  
+  action: :create,
 }
 
 # 18.5.11.3 L1 Ensure Prohibit use of Internet Connection Sharing on your DNS domain network is set to Enabled:
-default['wbg']['a00964']['windows']['wess']['2016']['registry_keys']['HKEY_LOCAL_MACHINE\Software\Policies\Microsoft\Windows\Network Connections']['NC_ShowSharedAccessUI'] = {
+default['wbg']['a00964']['windows']['wess']['2016']['registry_keys']['HKEY_LOCAL_MACHINE\SOFTWARE\POLICIES\MICROSOFT\WINDOWS\NETWORK CONNECTIONS']['NC_ShowSharedAccessUI'] = {
   reg_key: 'HKEY_LOCAL_MACHINE\\Software\\Policies\\Microsoft\\Windows\\Network Connections',
   name: 'NC_ShowSharedAccessUI',
   enabled: false,
   type: :dword,
   data: '0',
-  action: :create,  
+  action: :create,
 }
 
 # 18.8.21.4 L1 Ensure Continue experiences on this device is set to Disabled:
-default['wbg']['a00964']['windows']['wess']['2016']['registry_keys']['HKEY_LOCAL_MACHINE\Software\Policies\Microsoft\Windows\System']['EnableCdp'] = {
+default['wbg']['a00964']['windows']['wess']['2016']['registry_keys']['HKEY_LOCAL_MACHINE\SOFTWARE\POLICIES\MICROSOFT\WINDOWS\SYSTEM']['EnableCdp'] = {
   reg_key: 'HKEY_LOCAL_MACHINE\\Software\\Policies\\Microsoft\\Windows\\System',
   name: 'EnableCdp',
   enabled: true,
   type: :dword,
   data: '0',
-  action: :create,  
+  action: :create,
 }
 
 # 18.8.27.1 L1 Ensure Block user from showing account details on sign-in is set to Enabled:
-default['wbg']['a00964']['windows']['wess']['2016']['registry_keys']['HKEY_LOCAL_MACHINE\Software\Policies\Microsoft\Windows\System']['EnableCdp'] = {
+default['wbg']['a00964']['windows']['wess']['2016']['registry_keys']['HKEY_LOCAL_MACHINE\SOFTWARE\POLICIES\MICROSOFT\WINDOWS\SYSTEM']['EnableCdp'] = {
   reg_key: 'HKEY_LOCAL_MACHINE\\Software\\Policies\\Microsoft\\Windows\\System',
   name: 'EnableCdp',
   enabled: true,
   type: :dword,
   data: '0',
-  action: :create,  
+  action: :create,
 }
 
 # 18.8.28.1 L1 Ensure Untrusted Font Blocking is set to Enabled Block untrusted fonts and log events:
-default['wbg']['a00964']['windows']['wess']['2016']['registry_keys']['HKEY_LOCAL_MACHINE\Software\Policies\Microsoft\Windows\System']['BlockUserFromShowingAccountDetailsOnSignin'] = {
+default['wbg']['a00964']['windows']['wess']['2016']['registry_keys']['HKEY_LOCAL_MACHINE\SOFTWARE\POLICIES\MICROSOFT\WINDOWS\SYSTEM']['BlockUserFromShowingAccountDetailsOnSignin'] = {
   reg_key: 'HKEY_LOCAL_MACHINE\\Software\\Policies\\Microsoft\\Windows\\System',
   name: 'BlockUserFromShowingAccountDetailsOnSignin',
   enabled: true,
   type: :dword,
   data: '0',
-  action: :create,  
+  action: :create,
 }
 
 # 18.9.10.1.1 L1 Ensure Configure enhanced anti-spoofing is set to Enabled:
-default['wbg']['a00964']['windows']['wess']['2016']['registry_keys']['HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Biometrics\FacialFeatures']['EnhancedAntiSpoofing'] = {
+default['wbg']['a00964']['windows']['wess']['2016']['registry_keys']['HKEY_LOCAL_MACHINE\SOFTWARE\POLICIES\MICROSOFT\BIOMETRICS\FACIALFEATURES']['EnhancedAntiSpoofing'] = {
   reg_key: 'HKEY_LOCAL_MACHINE\\SOFTWARE\\Policies\\Microsoft\\Biometrics\\FacialFeatures',
   name: 'EnhancedAntiSpoofing',
   enabled: true,
   type: :dword,
   data: '0',
-  action: :create,  
+  action: :create,
 }
 
 # 18.9.16.1 L1 Ensure Allow Telemetry is set to Enabled 0 - Security Enterprise Only or Enabled 1 - Basic:
-default['wbg']['a00964']['windows']['wess']['2016']['registry_keys']['HKEY_LOCAL_MACHINE\Software\Policies\Microsoft\Windows\DataCollection']['AllowTelemetry'] = {
+default['wbg']['a00964']['windows']['wess']['2016']['registry_keys']['HKEY_LOCAL_MACHINE\SOFTWARE\POLICIES\MICROSOFT\WINDOWS\DATACOLLECTION']['AllowTelemetry'] = {
   reg_key: 'HKEY_LOCAL_MACHINE\\Software\\Policies\\Microsoft\\Windows\\DataCollection',
   name: 'AllowTelemetry',
   enabled: true,
   type: :dword,
   data: '0',
-  action: :create,  
+  action: :create,
 }
 
 # 18.9.16.3 L1 Ensure Disable pre-release features or settings is set to Disabled:
-default['wbg']['a00964']['windows']['wess']['2016']['registry_keys']['HKEY_LOCAL_MACHINE\Software\Policies\Microsoft\Windows\PreviewBuilds']['EnableConfigFlighting'] = {
+default['wbg']['a00964']['windows']['wess']['2016']['registry_keys']['HKEY_LOCAL_MACHINE\SOFTWARE\POLICIES\MICROSOFT\WINDOWS\PREVIEWBUILDS']['EnableConfigFlighting'] = {
   reg_key: 'HKEY_LOCAL_MACHINE\\Software\\Policies\\Microsoft\\Windows\\PreviewBuilds',
   name: 'EnableConfigFlighting',
   enabled: true,
   type: :dword,
   data: '0',
-  action: :create,  
+  action: :create,
 }
 
 # 18.9.16.4 L1 Ensure Do not show feedback notifications is set to Enabled:
-default['wbg']['a00964']['windows']['wess']['2016']['registry_keys']['HKEY_LOCAL_MACHINE\Software\Policies\Microsoft\Windows\DataCollection']['DoNotShowFeedbackNotifications'] = {
+default['wbg']['a00964']['windows']['wess']['2016']['registry_keys']['HKEY_LOCAL_MACHINE\SOFTWARE\POLICIES\MICROSOFT\WINDOWS\DATACOLLECTION']['DoNotShowFeedbackNotifications'] = {
   reg_key: 'HKEY_LOCAL_MACHINE\\Software\\Policies\\Microsoft\\Windows\\DataCollection',
   name: 'DoNotShowFeedbackNotifications',
   enabled: true,
   type: :dword,
   data: '0',
-  action: :create,  
+  action: :create,
 }
 
 # 18.9.16.5 L1 Ensure Toggle user control over Insider builds is set to Disabled:
-default['wbg']['a00964']['windows']['wess']['2016']['registry_keys']['HKEY_LOCAL_MACHINE\Software\Policies\Microsoft\Windows\PreviewBuilds']['AllowBuildPreview'] = {
+default['wbg']['a00964']['windows']['wess']['2016']['registry_keys']['HKEY_LOCAL_MACHINE\SOFTWARE\POLICIES\MICROSOFT\WINDOWS\PREVIEWBUILDS']['AllowBuildPreview'] = {
   reg_key: 'HKEY_LOCAL_MACHINE\\Software\\Policies\\Microsoft\\Windows\\DataCollection',
   name: 'AllowBuildPreview',
   enabled: true,
   type: :dword,
   data: '0',
-  action: :create,  
+  action: :create,
 }
 
 # 18.9.44.1 L1 Ensure Block all consumer Microsoft account user authentication is set to Enabled:
-default['wbg']['a00964']['windows']['wess']['2016']['registry_keys']['HKEY_LOCAL_MACHINE\Software\Policies\Microsoft\MicrosoftAccount']['DisableUserAuth'] = {
+default['wbg']['a00964']['windows']['wess']['2016']['registry_keys']['HKEY_LOCAL_MACHINE\SOFTWARE\POLICIES\MICROSOFT\MICROSOFTACCOUNT']['DisableUserAuth'] = {
   reg_key: 'HKEY_LOCAL_MACHINE\\Software\\Policies\\Microsoft\\MicrosoftAccount',
   name: 'DisableUserAuth',
   enabled: true,
   type: :dword,
   data: '0',
-  action: :create,  
+  action: :create,
 }
 
 # 18.9.76.13.1.1 L1 Ensure Configure Attack Surface Reduction rules is set to Enabled:
-default['wbg']['a00964']['windows']['wess']['2016']['registry_keys']['HKEY_LOCAL_MACHINE\Software\Policies\Microsoft\Windows Defender\Windows Defender Exploit Guard\ASR']['ExploitGuard_ASR_Rules'] = {
+default['wbg']['a00964']['windows']['wess']['2016']['registry_keys']['HKEY_LOCAL_MACHINE\SOFTWARE\POLICIES\MICROSOFT\WINDOWS DEFENDER\WINDOWS DEFENDER EXPLOIT GUARD\ASR']['ExploitGuard_ASR_Rules'] = {
   reg_key: 'HKEY_LOCAL_MACHINE\\Software\\Policies\\Microsoft\\Windows Defender\\Windows Defender Exploit Guard\\ASR',
   name: 'ExploitGuard_ASR_Rules',
   enabled: true,
   type: :dword,
   data: '0',
-  action: :create,  
+  action: :create,
 }
 
 #Surendra 18.9.76.13.1.2 L1 Ensure Configure Attack Surface Reduction rules Set the state for each ASR rule is configured:
-default['wbg']['a00964']['windows']['wess']['2016']['registry_keys']['HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows Defender\Windows Defender Exploit Guard\ASR\Rules']['75668c1f-73b5-4cf0-bb93-3ecf5cb7cc84'] = {
+default['wbg']['a00964']['windows']['wess']['2016']['registry_keys']['HKEY_LOCAL_MACHINE\SOFTWARE\POLICIES\MICROSOFT\WINDOWS DEFENDER\WINDOWS DEFENDER EXPLOIT GUARD\ASR\RULES']['75668c1f-73b5-4cf0-bb93-3ecf5cb7cc84'] = {
   reg_key: 'HKEY_LOCAL_MACHINE\\Software\\Policies\\Microsoft\\Windows Defender\\Windows Defender Exploit Guard\\ASR\\Rules',
   name: '75668c1f-73b5-4cf0-bb93-3ecf5cb7cc84',
   enabled: true,
   type: :dword,
   data: '1',
-  action: :create, 
+  action: :create,
 }
 
-default['wbg']['a00964']['windows']['wess']['2016']['registry_keys']['HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows Defender\Windows Defender Exploit Guard\ASR\Rules']['3b576869-a4ec-4529-8536-b80a7769e899'] = {
+default['wbg']['a00964']['windows']['wess']['2016']['registry_keys']['HKEY_LOCAL_MACHINE\SOFTWARE\POLICIES\MICROSOFT\WINDOWS DEFENDER\WINDOWS DEFENDER EXPLOIT GUARD\ASR\RULES']['3b576869-a4ec-4529-8536-b80a7769e899'] = {
   reg_key: 'HKEY_LOCAL_MACHINE\\Software\\Policies\\Microsoft\\Windows Defender\\Windows Defender Exploit Guard\\ASR\\Rules',
   name: '3b576869-a4ec-4529-8536-b80a7769e899',
   enabled: true,
   type: :dword,
   data: '1',
-  action: :create, 
+  action: :create,
 }
 
-default['wbg']['a00964']['windows']['wess']['2016']['registry_keys']['HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows Defender\Windows Defender Exploit Guard\ASR\Rules']['d4f940ab-401b-4efc-aadc-ad5f3c50688a'] = {
+default['wbg']['a00964']['windows']['wess']['2016']['registry_keys']['HKEY_LOCAL_MACHINE\SOFTWARE\POLICIES\MICROSOFT\WINDOWS DEFENDER\WINDOWS DEFENDER EXPLOIT GUARD\ASR\RULES']['d4f940ab-401b-4efc-aadc-ad5f3c50688a'] = {
   reg_key: 'HKEY_LOCAL_MACHINE\\Software\\Policies\\Microsoft\\Windows Defender\\Windows Defender Exploit Guard\\ASR\\Rules',
   name: 'd4f940ab-401b-4efc-aadc-ad5f3c50688a',
   enabled: true,
   type: :dword,
   data: '1',
-  action: :create, 
+  action: :create,
 }
 
-default['wbg']['a00964']['windows']['wess']['2016']['registry_keys']['HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows Defender\Windows Defender Exploit Guard\ASR\Rules']['92e97fa1-2edf-4476-bdd6-9dd0b4dddc7b'] = {
+default['wbg']['a00964']['windows']['wess']['2016']['registry_keys']['HKEY_LOCAL_MACHINE\SOFTWARE\POLICIES\MICROSOFT\WINDOWS DEFENDER\WINDOWS DEFENDER EXPLOIT GUARD\ASR\RULES']['92e97fa1-2edf-4476-bdd6-9dd0b4dddc7b'] = {
   reg_key: 'HKEY_LOCAL_MACHINE\\Software\\Policies\\Microsoft\\Windows Defender\\Windows Defender Exploit Guard\\ASR\\Rules',
   name: '92e97fa1-2edf-4476-bdd6-9dd0b4dddc7b',
   enabled: true,
   type: :dword,
   data: '1',
-  action: :create, 
+  action: :create,
 }
 
-default['wbg']['a00964']['windows']['wess']['2016']['registry_keys']['HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows Defender\Windows Defender Exploit Guard\ASR\Rules']['5beb7efe-fd9a-4556-801d-275e5ffc04cc'] = {
+default['wbg']['a00964']['windows']['wess']['2016']['registry_keys']['HKEY_LOCAL_MACHINE\SOFTWARE\POLICIES\MICROSOFT\WINDOWS DEFENDER\WINDOWS DEFENDER EXPLOIT GUARD\ASR\RULES']['5beb7efe-fd9a-4556-801d-275e5ffc04cc'] = {
   reg_key: 'HKEY_LOCAL_MACHINE\\Software\\Policies\\Microsoft\\Windows Defender\\Windows Defender Exploit Guard\\ASR\\Rules',
   name: '5beb7efe-fd9a-4556-801d-275e5ffc04cc',
   enabled: true,
   type: :dword,
   data: '1',
-  action: :create, 
+  action: :create,
 }
 
-default['wbg']['a00964']['windows']['wess']['2016']['registry_keys']['HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows Defender\Windows Defender Exploit Guard\ASR\Rules']['d3e037e1-3eb8-44c8-a917-57927947596d'] = {
+default['wbg']['a00964']['windows']['wess']['2016']['registry_keys']['HKEY_LOCAL_MACHINE\SOFTWARE\POLICIES\MICROSOFT\WINDOWS DEFENDER\WINDOWS DEFENDER EXPLOIT GUARD\ASR\RULES']['d3e037e1-3eb8-44c8-a917-57927947596d'] = {
   reg_key: 'HKEY_LOCAL_MACHINE\\Software\\Policies\\Microsoft\\Windows Defender\\Windows Defender Exploit Guard\\ASR\\Rules',
   name: 'd3e037e1-3eb8-44c8-a917-57927947596d',
   enabled: true,
   type: :dword,
   data: '1',
-  action: :create, 
+  action: :create,
 }
 
-default['wbg']['a00964']['windows']['wess']['2016']['registry_keys']['HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows Defender\Windows Defender Exploit Guard\ASR\Rules']['be9ba2d9-53ea-4cdc-84e5-9b1eeee46550'] = {
+default['wbg']['a00964']['windows']['wess']['2016']['registry_keys']['HKEY_LOCAL_MACHINE\SOFTWARE\POLICIES\MICROSOFT\WINDOWS DEFENDER\WINDOWS DEFENDER EXPLOIT GUARD\ASR\RULES']['be9ba2d9-53ea-4cdc-84e5-9b1eeee46550'] = {
   reg_key: 'HKEY_LOCAL_MACHINE\\Software\\Policies\\Microsoft\\Windows Defender\\Windows Defender Exploit Guard\\ASR\\Rules',
   name: 'be9ba2d9-53ea-4cdc-84e5-9b1eeee46550',
   enabled: true,
   type: :dword,
   data: '1',
-  action: :create, 
+  action: :create,
 }
 
 # 18.9.76.13.3.1 L1 Ensure Prevent users and apps from accessing dangerous websites is set to Enabled Block:
-default['wbg']['a00964']['windows']['wess']['2016']['registry_keys']['HKEY_LOCAL_MACHINE\Software\Policies\Microsoft\Windows Defender\Windows Defender Exploit Guard\Network Protection']['EnableNetworkProtection'] = {
+default['wbg']['a00964']['windows']['wess']['2016']['registry_keys']['HKEY_LOCAL_MACHINE\SOFTWARE\POLICIES\MICROSOFT\WINDOWS DEFENDER\WINDOWS DEFENDER EXPLOIT GUARD\NETWORK PROTECTION']['EnableNetworkProtection'] = {
   reg_key: 'HKEY_LOCAL_MACHINE\\Software\\Policies\\Microsoft\\Windows Defender\\Windows Defender Exploit Guard\\Network Protection',
   name: 'EnableNetworkProtection',
   enabled: true,
   type: :dword,
   data: '0',
-  action: :create,  
+  action: :create,
 }
 
 # 18.9.79.1.1 L1 Ensure Prevent users from modifying settings is set to Enabled:
-default['wbg']['a00964']['windows']['wess']['2016']['registry_keys']['HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows Defender Security Center\App and Browser protection']['DisallowExploitProtectionOverride'] = {
+default['wbg']['a00964']['windows']['wess']['2016']['registry_keys']['HKEY_LOCAL_MACHINE\SOFTWARE\POLICIES\MICROSOFT\WINDOWS DEFENDER SECURITY CENTER\APP AND BROWSER PROTECTION']['DisallowExploitProtectionOverride'] = {
   reg_key: 'HKEY_LOCAL_MACHINE\\SOFTWARE\Policies\\Microsoft\\Windows Defender Security Center\\App and Browser protection',
   name: 'DisallowExploitProtectionOverride',
   enabled: true,
   type: :dword,
   data: '0',
-  action: :create,  
+  action: :create,
 }
 
 # 18.9.84.2 L1 Ensure Allow Windows Ink Workspace is set to Enabled On but disallow access above lock OR Disabled but not Enabled On:
-default['wbg']['a00964']['windows']['wess']['2016']['registry_keys']['HKEY_LOCAL_MACHINE\Software\Policies\Microsoft\WindowsInkWorkspace']['AllowWindowsInkWorkspace'] = {
+default['wbg']['a00964']['windows']['wess']['2016']['registry_keys']['HKEY_LOCAL_MACHINE\SOFTWARE\POLICIES\MICROSOFT\WINDOWSINKWORKSPACE']['AllowWindowsInkWorkspace'] = {
   reg_key: 'HKEY_LOCAL_MACHINE\\Software\\Policies\\Microsoft\\WindowsInkWorkspace',
   name: 'AllowWindowsInkWorkspace',
   enabled: true,
   type: :dword,
   data: '0',
-  action: :create,  
+  action: :create,
 }
 
 # 18.9.101.1.1 L1 Ensure Manage preview builds is set to Enabled Disable preview builds:
-default['wbg']['a00964']['windows']['wess']['2016']['registry_keys']['HKEY_LOCAL_MACHINE\Software\Policies\Microsoft\Windows\WindowsUpdate']['ManagePreviewBuilds'] = {
+default['wbg']['a00964']['windows']['wess']['2016']['registry_keys']['HKEY_LOCAL_MACHINE\SOFTWARE\POLICIES\MICROSOFT\WINDOWS\WINDOWSUPDATE']['ManagePreviewBuilds'] = {
   reg_key: 'HKEY_LOCAL_MACHINE\\Software\\Policies\\Microsoft\\Windows\\WindowsUpdate',
   name: 'ManagePreviewBuilds',
   enabled: true,
   type: :dword,
   data: '0',
-  action: :create,  
+  action: :create,
 }
 
 # 18.9.101.1.2 L1 Ensure Select when Preview Builds and Feature Updates are received is set to Enabled Semi-Annual Channel 180 or more days:
-default['wbg']['a00964']['windows']['wess']['2016']['registry_keys']['HKEY_LOCAL_MACHINE\Software\Policies\Microsoft\Windows\WindowsUpdate']['DeferFeatureUpdates'] = {
+default['wbg']['a00964']['windows']['wess']['2016']['registry_keys']['HKEY_LOCAL_MACHINE\SOFTWARE\POLICIES\MICROSOFT\WINDOWS\WINDOWSUPDATE']['DeferFeatureUpdates'] = {
   reg_key: 'HKEY_LOCAL_MACHINE\\Software\\Policies\\Microsoft\\Windows\\WindowsUpdate',
   name: 'DeferFeatureUpdates',
   enabled: true,
   type: :dword,
   data: '0',
-  action: :create,  
+  action: :create,
 }
 
 # 18.9.101.1.3 L1 Ensure Select when Quality Updates are received is set to Enabled 0 days:
-default['wbg']['a00964']['windows']['wess']['2016']['registry_keys']['HKEY_LOCAL_MACHINE\Software\Policies\Microsoft\Windows\WindowsUpdate']['DeferQualityUpdates'] = {
+default['wbg']['a00964']['windows']['wess']['2016']['registry_keys']['HKEY_LOCAL_MACHINE\SOFTWARE\POLICIES\MICROSOFT\WINDOWS\WINDOWSUPDATE']['DeferQualityUpdates'] = {
   reg_key: 'HKEY_LOCAL_MACHINE\\Software\\Policies\\Microsoft\\Windows\\WindowsUpdate',
   name: 'DeferQualityUpdates',
   enabled: true,
   type: :dword,
   data: '0',
-  action: :create,  
+  action: :create,
 }
